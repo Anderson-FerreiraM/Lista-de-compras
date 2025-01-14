@@ -3,42 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRECISO FAZER COMPRAS</title>
+    <meta name="viewport" content= div class=" container">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+   
 </head>
 
 <body>
-    <p id="1">Você digitou: </p>
-    <p id="outroParagrafo">nome</p>
-    <p id="3">j</p>
-    <p id="4">se errar devera mamar</p>
-    <p id="5">ola meu senhores</p>
+    <div>
+        <h1> Lista de compras</h1>
+        <p class="subtitle">Facilite sua ida ao supermercado</p>
+        <div class="form">
+            <div class="inputGroup">
+                <input id="item" type="text" placeholder="Escreva">
+                <input id="quantidade" type="number" placeholder="quantidade" min="0" max="30">
 
-    <button onclick="alert('salvo do rebaixamento')">É O GREMIO</button>
-    <!-- 1 -->
-    <button onclick="alterarP()">Clique aqui para deixar de ser calvo</button>
-    <!-- 2 -->
-    <button onclick="alterarbutun()">Clique aqui para deixar de ser gay</button>
-    <br>
-    <h2> Lista de Habitos Saudaveis</h2>
-
-    <ol id="Lista">
-        <li>Beber agua</li>
-        <li>Dormir bem</li>
-        <li>Comer frutar</li>
-        <li> Pratica Fisica</li>
-        <li></li>
-    </ol>
-    <button onclick="AdicionarHabito()">Adionar Habito</button>
-    <br>
-    <button onclick="BOra()"> ai meu cuuuuuu</button>
-    <button onclick="naovagozar()">tire a gozação</button>
-    <br>
-    <br>
-    <br>
-    
-        
-    <script src="script.js"></script>
+            </div>
+            <button onclick="Addicionar()" id="add">Adicionar Item</button>
+        </div>
+        <ul class="lista">
+            <li></li>
+        </ul>
+        <div class="actions">
+            <button class="clean" onclick="limparLista()">Limpar Lista</button>
+            <button class="clean-buy" onclick="limparComprados()">Limpar comprados</button>
+        </div>
+        </ul>
+    </div>
+    <script src="scriptlista.js"></script>
 </body>
 
 </html>
