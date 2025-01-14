@@ -79,7 +79,7 @@ input:focus {
     border-color: aquamarine;
 }
 
-li {
+.inputGroup li {
     display: flex;
     margin: 20px 0px;
 }
@@ -92,6 +92,21 @@ li button {
     margin-left: auto;
 
 }
-li p{
+
+li p {
     margin-left: 12px;
+}
+
+@media (max-width: 900px) {
+    #item{
+        width: 97%;
+    }
+    #quantidade{
+        width: 97%;
+
+    }
+    
+    .inputGroup{
+        flex-direction: column;
+    }
 }
